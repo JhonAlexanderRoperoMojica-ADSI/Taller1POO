@@ -1,0 +1,47 @@
+body{
+    padding: 50px;
+    background: rgb(24, 24, 185);
+}
+
+*{
+    font-family: cursive;
+    font-size: 1.10em;
+}
+
+.container{
+    margin: auto;
+    padding: 15px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    border: 2px solid rgb(61, 61, 226);
+    background: rgb(61, 61, 226);
+    cursor: pointer;
+    box-shadow: 20px 20px 25px;
+}
+
+h1{
+    color: white;
+}
+
+.input{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.btn{
+    margin: 35px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 7px 7px 15px black; 
+}
+
+.btn:hover{
+    color: white;
+    background: rgb(61, 61, 226);
+    transition: 1s;
+}
+
+pre{
+    color: white;
+}
