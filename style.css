@@ -8,6 +8,25 @@ body{
     font-size: 1.10em;
 }
 
+li{
+    list-style: none;
+}
+
+.caja{
+    padding: auto;  
+    border: 2px solid rgb(61, 61, 226);
+    background: white;
+    width: 220px;
+    height: 220px;
+    box-shadow: 10px 10px 20px;
+}
+
+.caja:hover{
+    color: white;
+    background: rgb(61, 61, 226);
+    transition: 2s;
+}
+
 .container{
     margin: auto;
     padding: 15px;
@@ -43,5 +62,6 @@ h1{
 }
 
 pre{
+    text-align: left;
     color: white;
 }
