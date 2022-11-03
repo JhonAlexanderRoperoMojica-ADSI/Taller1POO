@@ -8,29 +8,40 @@
     <script src="main.js"></script>
     <title>Document</title>
 </head>
-<body>
-
-    <div class="caja">
-        <ul>
-            <h2>Codigos</h2>
-            <li>1. Zapatos</li>
-            <li>2. Camisetas</li>
-            <li>3. Pantalon</li>
-        </ul>
-    </div>
-    
+<body>  
     <div class="container">
-        <h1>2. De la galería de productos,
-            el usuario introducirá el código y el número de unidades del producto que desea comprar.
-            El programa determinará el total a pagar, como una factura. Ejemplo de factura. </h1>
+        <h1>3. Escribir un programa que permita ingresar para los N alumnos de una universidad: SEXO (‘M’ o ‘F’),
+            edad y carrera (‘A’,’B’,’C’). 
+            Imprimir la carrera con menor promedio de edad de sus alumnos que son varones </h1>
+            
             <form id="form" action="api.php" method="post">
-                <input type="number" name="codigo" placeholder="Ingresa el Codigo del Producto" class="input">
-                <input type="number" name="cantidad" placeholder="Ingresa la Cantidad del Producto" class="input">
-                <input type="submit" value="Pagar" class="btn">
+                <input type="number" name="cantidad" id="cantidad" placeholder="Ingresa la Cantidad de Estudiantes" required disabled class="input">
+                    <label>Seleccione el Genero de los Estudiantes</label>
+                    <select name="genero" id="genero" required disabled class="select">
+                        <option value=""></option>
+                        <option value="femenino" >Femenino</option>
+                        <option value="masculino">Masculino</option>
+                    </select>
+             
+                
+
+                <input type="number" name="edad" id="edad" placeholder="Ingresa la Edad de los Estudiantes" required disabled class="input">
+                
+                <label>Seleccione la Carrera de los Estudianes</label>
+                <select name="carrera" id="carrera" required disabled class="select">
+                    <option value="" disabled selected></option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+
+                <input type="submit" class="btn">
+
+                <div class="resul">
+                    La Carrera que Tiene Mayor numero de Menores de Edad y Estudiantes Varones es: <h1 id="res"></h1>
+                </div>
             </form>
-            <pre id="res">
-                * El Total a Pagar es: 
-            </pre>
+            
     </div>
 </body>
 </html>

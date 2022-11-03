@@ -1,37 +1,28 @@
 body{
-    padding: 50px;
+    padding: 20px;
     background: rgb(24, 24, 185);
 }
 
 *{
     font-family: cursive;
-    font-size: 1.10em;
+    font-size: 25px;
 }
 
-li{
-    list-style: none;
-}
-
-.caja{
-    padding: auto;  
-    border: 2px solid rgb(61, 61, 226);
-    background: white;
-    width: 220px;
-    height: 220px;
-    box-shadow: 10px 10px 20px;
-}
-
-.caja:hover{
+div.resul{
     color: white;
-    background: rgb(61, 61, 226);
-    transition: 2s;
+}
+
+label{
+    color: white;
 }
 
 .container{
+    justify-content: center;
+    display: block;
     margin: auto;
     padding: 15px;
-    height: 500px;
-    width: 500px;
+    height: 85vh;
+    width: 55vh;
     text-align: center;
     border: 2px solid rgb(61, 61, 226);
     background: rgb(61, 61, 226);
@@ -44,11 +35,14 @@ h1{
 }
 
 .input{
+    display: block;
+    padding: 0 30px 0 40px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .btn{
+    width: 200px;
     margin: 35px;
     background: white;
     border-radius: 10px;
@@ -61,7 +55,12 @@ h1{
     transition: 1s;
 }
 
-pre{
-    text-align: left;
+.select{
+    height: 30px;
+    width: 250px;
+    margin: 15px;
+}
+
+p{
     color: white;
 }
