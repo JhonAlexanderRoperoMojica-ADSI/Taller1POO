@@ -55,12 +55,6 @@ h1{
     transition: 1s;
 }
 
-.select{
-    height: 30px;
-    width: 250px;
-    margin: 15px;
-}
-
-p{
+pre{
     color: white;
 }
